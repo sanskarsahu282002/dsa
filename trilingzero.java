@@ -10,27 +10,27 @@ public class trilingzero {
         }
         System.out.println(res);
     }
-    public static void trailfact(int n)
-    {
-        int res=1;
-        int countzero=0;
-        for(int i=2;i<=n;i++)
-        {
-            res=res*i;
-        }
-        System.out.println(res);
-        while(res%10==0)
-        {
-            countzero++;
-            res=res/10;
-        }
-        System.out.println(countzero);
-    }
+    // public static void trailfact(int n)
+    // {
+    //     int res=1;
+    //     int countzero=0;
+    //     for(int i=2;i<=n;i++)
+    //     {
+    //         res=res*i;
+    //     }
+    //     System.out.println(res);
+    //     while(res%10==0)
+    //     {
+    //         countzero++;
+    //         res=res/10;
+    //     }
+    //     System.out.println(countzero);
+    // }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the n");
         int n = sc.nextInt();
-        trailfact(n);
+        //trailfact(n);
         trailfact1(n);
     }
 }
